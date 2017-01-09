@@ -1,0 +1,398 @@
+@charset "utf-8";
+/* CSS for small screens (max-width:767px) */
+.lscreen {
+	display:none;
+}
+.sscreen {
+	display:block;
+}
+#container {
+	min-width:320px;
+	max-width:640px;
+	padding-bottom:140px;
+	background:#fff;
+}
+#images {
+	display:none;
+}
+#wrapper {
+	margin-top:0;
+	float:left;
+	width:100%;
+	background-color:#fff;
+	border-radius:8px 8px 0 0;
+}
+#header {
+	border-bottom:5px solid #d26900;
+	margin-bottom:1em;
+}
+#logo {
+	margin:0 auto;
+	position:relative;
+	width:220px;
+	height:40px;
+}
+#header .logo {
+	position:absolute;
+	top:7px;
+	z-index:889;
+	display:block;
+	width:220px;
+	height:30px;
+	background:url(../im/hwb-logo-small.png);
+	background-size:220px 30px;
+}
+#logo h2 {
+	position:absolute;
+	top:15px;
+	right:4px;
+	min-width:110px;
+	padding:0 10px;
+	background-color:#327db9;
+	font-size:13px;
+	line-height:21px;
+	text-align:center;
+	color:#fff;
+	z-index:888;
+	border-radius:4px;
+	border:1px solid #2b6b9f;
+}
+#logo h3 {
+	display:none;
+}
+#opennav, #openuser {
+	width:40px;
+	height:40px;
+	background:#fff url(../im/hwb-menu-sprite.png) 0 0 no-repeat;
+	background-size:40px 320px;
+	cursor:pointer;
+}
+#openuser {
+	position:absolute;
+	top:0;
+	right:0;
+	background-position:0 -120px
+}
+#nav {
+	position:absolute;
+	z-index:777;
+	left:0;
+	right:0;
+	top:0;
+	text-align:center;
+	font-size:14px;
+}
+#nav .contentBlock {
+	width:100%;
+	padding:0;
+}
+#nav .nav, #nav .user {
+	position:absolute;
+	background-color:#666;
+	color:#fff;
+	display:none;
+	z-index:999;
+	top:45px;
+	width:50%;
+	min-width:180px;
+	line-height:40px;
+	text-align:left;
+	border:1px solid #444;
+	border-top:none;
+}
+#nav .user {
+	right:0;
+	width:auto;
+}
+.user {
+	padding:0 10px;
+	border-top:1px solid #717171;
+	border-bottom:1px solid #5f5f5f;
+}
+.user a {
+	color:#fff;
+}
+#nav ul li {
+	list-style:none;
+}
+#nav ul li a {
+	display:block;
+	width:100%;
+	padding:0 10px;
+	font-size:16px;
+	border-top:1px solid #717171;
+	border-bottom:1px solid #5f5f5f;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	color:#fff;
+}
+#nav ul li a:hover, #nav ul li a:active {
+	color:#fff;
+	background-color:#444;
+	border-bottom:1px solid #515151;
+	border-top:1px solid #3f3f3f;
+	text-decoration:none;
+}
+#nav ul li.active a {
+	color:#fff;
+	background-color:#327db9;
+	border-top:1px solid #4086be;
+	border-bottom:1px solid #2e74ac;
+}
+#header, #content {
+	float:left;
+	width:100%;
+}
+.contentBlock.woning img {
+	width:75px;
+	height:75px;
+	border-width:2px;
+}
+
+.content {
+	padding:0 10px;
+}
+@media screen and (min-width:400px) {
+	.contentBlock.woning img {
+		width:20%;
+		height:auto;
+	}
+}
+@media screen and (max-width:480px) {
+	.contentBlock.woning h1 {
+		font-size:16px;
+	}
+	.contentBlock.woningdetails h1, .contentBlock.woningdetails h2 {
+		display:block;
+		padding:5px 0 0 0;
+	}
+	.contentBlock.woningdetails span.details, .contentBlock.woningdetails span.reactie {
+		display:block;
+		clear:both;
+		float:none;
+		margin:5px 0 0 0;
+	}
+}
+/*@media screen and (max-width:400px) {
+	.standout {
+		display:block;
+		clear:both;
+		margin-left:17px;
+		line-height:20px;
+	}
+}
+*/#footer {
+	height:120px;
+}
+#pageFooter {
+	position:absolute;
+	left:0;
+	right:0;
+	line-height:20px;
+	padding:10px;
+	bottom:0;
+	background-color:#e9e9e9;
+	text-align:center;
+	font-size:13px;
+	color:#666;
+}
+@media screen and (max-width:639px) {
+	#cookiePolicy span {
+		clear:both;
+		float:left;
+	}
+	#cookiePolicy .closeCookie {
+		position:absolute;
+		top:15px;
+		right:15px;
+	}
+	.feedback {
+		display: block;
+	}
+	.choice .details input[type=text], .choice .details select, .choice .details input[type=submit], .choice .details input[type=button]  {
+		margin:8px 0 0 0;
+		min-width:100%;
+	}
+}
+@media screen and (max-width:479px) {
+	#cookiePolicy {
+		text-align:center;
+	}
+	#cookiePolicy span {
+		display:block;
+		width:100%;
+	}
+	#cookiePolicy .closeCookie {
+		position:relative;
+		top:0;
+		right:0;
+		float:none;
+		margin:10px;
+	}
+}
+
+fieldset {
+	border:none;
+	border-bottom:1px solid #ccc;
+	background:none;
+	padding:0 0 10px 0;
+	margin-bottom:15px;
+	border-radius:0;
+}
+label {
+	display:block;
+	margin:5px 0 0 0;
+}
+fieldset label, fieldset p {
+	height:auto;
+	line-height:none;
+}
+fieldset label {
+	width:100% !important;
+}
+.choice .details label {
+	float:none;
+	width:auto !important;
+	margin:8px 0 0 0;
+}
+.s {
+	clear:both;
+	float:left;
+	display:block;
+	width:80px;
+}
+.sm {
+	clear:both;
+	float:left;
+	width:100px;
+	margin-right:10px;
+}
+.m {
+	clear:both;
+	float:left;
+	width:210px;
+	margin-right:10px;
+}
+.l {
+	clear:both;
+	float:left;
+	width:100%;
+}
+.day {
+	clear:both;
+	float:left;
+}
+.submit {
+	display:block;
+	text-align:center;
+}
+fieldset span.xl {
+	margin-bottom:15px;
+}
+fieldset.last {
+	border-bottom:none;
+}
+
+
+@media screen and (min-width:480px) {
+	.ObjectType .radiobuttonlist li label {
+		width:49%;
+		margin:4px 4px 0 0;
+	}
+}
+.price {
+	display:inline-block;
+}
+.price span {
+	min-width:30px;
+	text-align:right;
+	padding:0 5px;
+}
+
+
+#stepContainer {
+	margin:0;
+}
+.stepsList {
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	text-align:right;
+	margin:0;
+	padding:0;
+	height:28px;
+	overflow:hidden;
+}
+.stepsList li {
+	list-style:none;            
+	display:table-cell;
+	position:relative;
+	padding:0;
+	margin:0;
+}
+	.stepsList li:after {
+		content:'';
+		position:absolute;
+		width:100%;
+		border-top:4px solid #327db9;
+		top:12px;
+		left:0;
+	}
+	.stepsList li:first-child {
+		text-align:left;
+		width:28px;
+	}
+	.stepsList span, .stepsList a{
+		width:28px;
+		height:28px;
+		background: none;
+		border-radius:50%;
+		position:absolute;
+		right:0;
+	}
+	.stepsList a {
+		background:none;
+	}
+    .stepsList li b, .stepsList li i {
+		display:none;
+	}
+	.stepsList a {
+		line-height:28px;
+		z-index:600;
+		text-align:center;
+		color:#327db9;
+		background:#327db9 url(../im/hwb-checkmarks.png) 0 0 no-repeat;
+		background-size:92px 84px;
+		text-decoration:none;
+	}
+	.stepsList .current span {
+		width:28px;
+		height:28px;
+		background-color:#fff;
+		border:2px solid #327db9;
+		z-index:500;
+	}
+	.stepsList .current span:after {
+		content:'';
+		width:18px;
+		height:18px;
+		margin:3px;
+		background-color:#327db9;
+		border-radius:50%;
+		position:absolute;
+		left:0;                
+	}
+	.stepsList .current ~ li span {
+		background-color:#327db9;
+	}
+	.stepsList .current ~ li span:after {
+		content:'';
+		width:24px;
+		height:24px;
+		margin:2px;
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		left:0;
+		z-index:500;
+	}

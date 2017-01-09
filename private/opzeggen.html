@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HuurwoningBemiddeling - Amsterdam</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="icon" href="../im/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/private_all_screens.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/private_small_screens.css" media="screen and (max-width: 639px)" />
+<link rel="stylesheet" type="text/css" href="../css/private_large_screens.css" media="screen and (min-width: 640px)" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../css/private_lt_ie9.css" media="screen" />
+<![endif]-->
+
+</head>
+<body>
+<form>
+
+<!-- Cookie notification -->
+<div id="cookiePolicy" style="display:none;">
+  <div class="inner">
+    <span>HuurwoningBemiddeling maakt gebruik van cookies.</span>
+    <span>Zie het <a href="#">Privacy- en cookiebeleid</a>.</span>
+    <a href="#" class="closeCookie">akkoord en sluiten</a>
+  </div>
+</div>
+
+
+<div id="container">
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo">
+        <div class="logo"></div>
+        <h1>HuurwoningBemiddeling</h1>
+        <h2>Amsterdam</h2>
+        <h3>snel en betrouwbaar een huurwoning vinden</h3>
+      </div>
+      <div id="images"></div>
+    </div>
+
+    <div id="content">
+      <div id="nav">
+        <div id="opennav"></div>
+        <div id="openuser"></div>
+        <div class="user">rex@mailnetwork.nl (<a href="#">uitloggen</a>)</div>
+        <ul class="nav">
+          <li class="active"><a href="huurwoningen.html">Gevonden woningen</a></li>
+          <li><a href="mijn-gegevens.html">Mijn gegevens</a></li>
+          <li><a href="voorkeuren.html">Woning voorkeuren</a></li>
+          <li><a href="instellingen.html">Instellingen</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+      <div class="content">
+
+        <div class="contentBlock">
+          <h1>Abonnement opzeggen</h1>
+        </div>
+
+        <div class="contentBlock form">
+          <fieldset>
+            <span class="fullwidth">
+              <input name="akkoord" type="checkbox" value="akkoord" id="akkoord"><label for="akkoord">Ik ga akkoord met het opzeggen van mijn abonnement zonder terugbetaling van eventuele abonnementsgelden.</label>
+            </span>
+          </fieldset>
+          <span class="submit xl"><input name="opslaan" type="submit" value="Nu opzeggen"></span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="ads">
+      <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- HWB_responsive -->
+      <ins class="adsbygoogle hwb-responsive"
+           style="display:inline-block"
+           data-ad-client="ca-pub-7100768168824702"
+           data-ad-slot="4140646674"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div id="pageFooter">Copyright © 2014 • <a href="../public/hwb-disclaimer.html">disclaimer</a> • <a href="../public/hwb-privacy-statement.html">privacystatement</a> • <a href="../public/hwb-cookiebeleid.html">cookiebeleid</a> • <a href="../public/hwb-alg-vw.html">algemene voorwaarden</a></div>
+  </div>
+</div>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src='../js/fastclick.js'></script>
+
+<script>
+$(document).ready(function(){
+
+  $('.closeCookie').click(function() { // Opens verhuren menu
+    $("#cookiePolicy").slideUp('fast');
+  });
+
+
+  $.fn.winSize = function() { // Function to determain if screensize < 640 
+    if ( $(window).width() < 640) { return true };
+  }
+
+  $.fn.cleanUp = function(action) { // Function to close opened menus
+    if ( $().winSize() ) {
+      if (action === "nav" || action === "both") {
+        $("#nav .nav").slideUp('fast');
+      } 
+      if (action === "user" || action === "both") {
+        $("#nav .user").slideUp('fast');
+      }
+    }
+  }
+
+  $('#opennav').click(function() { // Opens huren menu
+    if ( $().winSize() ) {
+      $("#nav .nav").slideToggle('fast');
+      $().cleanUp("user");
+    }
+  });
+  $('#openuser').click(function() { // Opens huren menu
+    if ( $().winSize() ) {
+      $("#nav .user").slideToggle('fast');
+      $().cleanUp("nav");
+    }
+  });
+
+  $('.content').click(function() { // Close both menus
+    $().cleanUp("both");
+  });
+
+  var resizeTimeOut; // Hides opened menus on window resize
+  $(window).resize(function () {
+    if ( $().winSize() ) {
+	} else {
+        $("#nav .nav").hide();
+        $("#nav .user").hide();
+	}
+  });
+
+// Polyfill to remove click delays on browsers with touch UIs
+  $(function() {
+    FastClick.attach(document.body);
+  });
+});
+</script>
+
+</body>
+</html>

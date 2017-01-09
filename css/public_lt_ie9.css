@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS for lt IE9 */
+#container {
+	max-width:800px;
+	min-width:720px;
+}
+.lscreen {
+	display:block;
+}
+.sscreen {
+	display:none;
+}
+#recent, #nav {
+	position:absolute;
+	top:10px;
+	width:50%;
+	max-width:400px;
+	z-index:777;
+}
+#recent {
+	right:50%;
+	text-align:center;
+	font-size:14px;
+	line-height:40px;
+	color:#fff;
+}
+#nav {
+	left:50%;
+	text-align:center;
+	font-size:14px;
+}
+#content {
+	margin-top:50px;
+	border-left:1px solid #ccc;
+}
+.contentBlock {
+	width:320px;
+}
+#huren.active ul, #verhuren.active ul {
+	display:block !important;
+}
+#huren div, #verhuren div {
+	float:left;
+	position:relative;
+	width:50%;
+	background:#fff;
+	z-index:888;
+	text-transform:uppercase;
+	text-align:center;
+}
+#huren div a, #verhuren div a {
+	display:block;
+	width:100%;
+	height:45px;
+	border-bottom:5px solid #d2d2d2;
+	line-height:40px;
+	color:#575757;
+}
+#huren:hover div a, #verhuren:hover div a {
+	color:#d26900;
+	text-decoration:none;
+}
+#huren.active div a {
+	border-bottom:5px solid #d26900;
+	font-weight:bold;
+	color:#575757;
+	text-decoration:none;
+}
+#verhuren.active div a {
+	border-bottom:5px solid #43b436;
+	font-weight:bold;
+	color:#575757;
+	text-decoration:none;
+}
+#huren div {
+	border-right:solid 1px #d2d2d2;
+}
+#nav ul {
+	position:absolute;
+	display:none;
+	z-index:999;
+	left:0;
+	top:35px;
+	width:100%;
+	padding:10px;
+	line-height:40px;
+}
+#nav ul li {
+	list-style:none;
+	display:inline-block;
+	padding:0 5px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration:underline;
+	color:#575757;
+}
+#nav ul li a:hover, #nav ul li a:active {
+	text-decoration:underline;
+	color:#d26900;
+}
+#nav ul li.active a {
+	text-decoration:underline;
+	color:#327db9;
+}
+#header, #content {
+	float:left;
+	width:50%;
+}
+#wrapper.large #images, #wrapper.twocols #images {
+	top:65px;
+	right:0;
+	width:50%;
+	position:absolute;
+}
+#wrapper.large #content, #wrapper.twocols #content {
+	margin-top:0;
+	float:left;
+	width:100%;
+}
+#wrapper.twocols #content .spacer {
+	width:100%;
+	max-width:720px;
+	margin:0 auto;
+	border-top:1px solid #d2d2d2;
+}
+#wrapper.twocols #content .col {
+	width:50%;
+	float:left;
+}
+#wrapper.twocols #content .col.left {
+	border-right:1px solid #d2d2d2;
+}
+#wrapper .contentBlock.large {
+	width:100%;
+	max-width:720px;
+	border-top:1px solid #d2d2d2;
+}
+#pageFooter {
+	clear:both;
+	line-height:45px;
+	background-color:#e9e9e9;
+	border-top:45px solid #fff;
+	text-align:center;
+	font-size:13px;
+	color:#666;
+}
+#usp .contentBlock {
+	background-color:#3CF;
+	background:url(../im/hwb-meisje-lowres.png) right bottom no-repeat;
+}
+
+#images {
+	height:160px;
+	width:100%;
+	background:url(../im/hwb-sfeer-lowres.png) center center no-repeat;
+}
+.ads { background-color:#fff}
+.hwb-responsive { width:728px; height:90px; }

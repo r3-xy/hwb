@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HuurwoningBemiddeling - Amsterdam</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="icon" href="../im/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/public_all_screens.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/public_small_screens.css" media="screen and (max-width: 639px)" />
+<link rel="stylesheet" type="text/css" href="../css/public_large_screens.css" media="screen and (min-width: 640px)" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../css/public_lt_ie9.css" media="screen" />
+<![endif]-->
+
+</head>
+<body>
+<form>
+
+<!-- Cookie notification -->
+
+
+<div id="container">
+  <div id="recent">Aanbod afgelopen maand: <strong>5005</strong> huurwoningen</div>
+  <div id="nav">
+    <div class="contentBlock" style="padding-top:0;">
+<!-- Huren navigation -->
+    <div id="huren" class="active">
+      <div>
+        <span class="sscreen"><a>Huren</a></span>
+        <span class="lscreen"><a href="huren.html">Huren</a></span>
+      </div>
+      <ul id="navHuren">
+        <li class="active"><a href="huren.html">Inschrijven</a></li>
+        <li><a href="huren-inloggen.html">Inloggen</a></li>
+        <li><a href="huren-hoe-werkt-het.html">Werkwijze</a></li>
+        <li><a href="huren-help.html">Veelgestelde vragen</a></li>
+      </ul>
+    </div>
+<!-- Verhuren navigation -->
+    <div id="verhuren">
+      <div>
+        <span class="sscreen"><a>Verhuren</a></span>
+        <span class="lscreen"><a href="verhuren.html">Verhuren</a></span>
+      </div>
+      <ul id="navVerhuren">
+        <li><a href="verhuren.html">Verhuren</a></li>
+        <li><a href="verhuren-registreren.html">Registreren</a></li>
+        <li><a href="verhuren-inloggen.html">Inloggen</a></li>
+        <li><a href="verhuren-help.html">Help</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+    
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo">
+        <img src="../im/hwb-logo.png" width="320" height="80" alt="Huurwoningbemiddeling.nl">
+        <h1>HuurwoningBemiddeling</h1>
+        <h2>Amsterdam</h2>
+        <h3>snel en betrouwbaar een huurwoning vinden</h3>
+      </div>
+      <div id="usp">
+        <div class="contentBlock">
+          <h1>Schrijf u in en vind vandaag de huurwoning die bij u past</h1>
+          <ul>
+            <li><span class="vink">&#10003; </span> Actueel aanbod</li>
+            <li><span class="vink">&#10003; </span> In uw regio</li>
+            <li><span class="vink">&#10003; </span> Dagelijkse updates</li>
+          </ul>
+        </div>
+      </div>
+      <div id="images"></div>
+    </div>
+
+    <div id="content">
+      <div class="contentBlock">
+      <h1>Inschrijven</h1>
+     
+	<style>
+        input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+            padding:8px; border-radius:3px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:16px;
+        }
+        select { padding:7px; }
+        select:required:invalid { color: #acacac; }
+        option[value=""][disabled] { display: none; }
+        option { color: #595959; }
+		.registerM { width:180px; margin-right:10px; }
+		.registerS { width:110px; }
+		.registerL { width:301px; }
+
+		.myButton {
+			/* box-shadow:inset 0px 1px 0px 0px #caefab; */
+			background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%) !important;
+			background-color:#77d42a !important;
+			border-radius:6px !important;
+			border:1px solid #268a16 !important;
+			cursor:pointer !important;
+			color:#fff !important;
+			font-family:Arial, Helvetica, sans-serif !important;
+			font-size:18px !important;
+			font-weight:bold !important;
+			padding:8px 24px !important;
+			line-height:30px !important;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #268a16;
+		}
+		.myButton:hover {
+			background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+			background-color:#5cb811;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+	</style>
+      <fieldset>
+        <select required name="Plaats" class="registerM">
+          <option value="" disabled selected hidden>Plaats</option>
+          <option value="Amsterdam">Amsterdam</option>
+          <option value="Den Haag">Den Haag</option>
+          <option value="Rotterdam">Rotterdam</option>
+          <option value="Zaanstad">Zaanstad</option>
+        </select> 
+        <select required name="Afstand" class="registerS">
+          <option value="" disabled selected hidden>Afstand</option>
+          <option value="5">+5km</option>
+          <option value="10">+10km</option>
+          <option value="15">+15km</option>
+          <option value="20">+20km</option>
+        </select> 
+        <span class="error" style="display:none;">• Kies een plaats en afstand</span>
+      </fieldset>
+    
+      <fieldset>
+        <select required name="Woning" class="registerL">
+          <option value="" disabled selected hidden>Type woning</option>
+          <option value="Maakt niet uit">Maakt niet uit</option>
+          <option value="Appartement">Appartement</option>
+          <option value="Rijtjeswoning">Rijtjeswoning</option>
+          <option value="Villa">Villa</option>
+        </select> 
+        <span class="error" style="display:none;">• Kies een type woning</span>
+      </fieldset>
+    
+      <fieldset>
+        <input required type="email" name="Woning" class="registerL" placeholder="E-mailadres">
+        <span class="error" style="display:none;">• Vul een e-mailadres in</span>
+      </fieldset>
+    
+      <fieldset>
+        <label><input name="akkoord" type="checkbox" value="akkoord"> Ik ga akkoord met het ontvangen van speciaal geselecteerde aanbiedingen van HuurwoningBemiddeling.nl en derden. Ik kan mij te allen tijde uitschrijven hiervan via de uitschrijflink onder elke e-mail.</label>
+      </fieldset>
+    
+      <fieldset>
+       <input type="submit" name="verzend" value="Inschrijven ›" class="myButton" />
+       <p>Door te klikken op Inschrijven gaat u akkoord met de <a href="hwb-alg-vw.html">Algemene voorwaarden</a> en het <a href="hwb-privacy-statement.html">Privacystatement</a>.</p>
+      </fieldset>
+      </div>
+    </div>
+    
+    <div id="contentFooter">HuurwoningBemiddeling is aangemeld bij het College Bescherming Persoonsgegevens onder nummer m1462019.</div>
+  </div>
+
+  <div id="footer">
+    <div class="ads">
+      <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- HWB_responsive -->
+      <ins class="adsbygoogle hwb-responsive"
+           style="display:inline-block"
+           data-ad-client="ca-pub-7100768168824702"
+           data-ad-slot="4140646674"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div id="pageFooter">Copyright © 2014 • <a href="../public/hwb-disclaimer.html">disclaimer</a> • <a href="../public/hwb-privacy-statement.html">privacystatement</a> • <a href="../public/hwb-cookiebeleid.html">cookiebeleid</a> • <a href="../public/hwb-alg-vw.html">algemene voorwaarden</a></div>
+  </div>
+</div>
+
+<div id="cookiePolicy">
+  <div class="inner">
+    <span>HuurwoningBemiddeling maakt gebruik van cookies.</span>
+    <span>Zie het <a href="hwb-privacy-statement.html">Privacy-</a> en <a href="hwb-cookiebeleid.html">cookiebeleid</a>.</span>
+    <a class="closeCookie">akkoord en sluiten</a>
+  </div>
+</div>
+
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src='../js/fastclick.js'></script>
+
+<script>
+$(document).ready(function(){
+
+  $('div#cookiePolicy').insertBefore($('div#container')); // Cookiemelding in de DOM omhoog schoppen
+
+  $('.closeCookie').click(function() { // Opens verhuren menu
+    $("#cookiePolicy").slideUp('fast');
+  });
+
+
+  $.fn.winSize = function() { // Function to determain if screensize < 640 
+    if ( $(window).width() < 640) { return true };
+  }
+
+  $.fn.cleanUp = function(action) { // Function to close opened menus
+    if ( $().winSize() ) {
+      if (action === "huren" || action === "both") {
+        $("#navHuren").slideUp('fast');
+      } 
+      if (action === "verhuren" || action === "both") {
+        $("#navVerhuren").slideUp('fast');
+      }
+    }
+  }
+
+  $('#huren').click(function() { // Opens huren menu
+    if ( $().winSize() ) {
+      $("#navHuren").slideToggle('fast');
+      $().cleanUp("verhuren");
+    }
+  });
+
+  $('#verhuren').click(function() { // Opens verhuren menu
+    if ( $().winSize() ) {
+      $("#navVerhuren").slideToggle('fast');
+      $().cleanUp("huren");
+    }
+  });
+
+  $('#wrapper').click(function() { // Close both menus
+    $().cleanUp("both");
+  });
+
+  var resizeTimeOut; // Hides opened menus on window resize
+  $(window).resize(function () {
+    if ( $().winSize() ) {
+	} else {
+        $("#navHuren").hide();
+        $("#navVerhuren").hide();
+	}
+  });
+
+// Polyfill to remove click delays on browsers with touch UIs
+  $(function() {
+    FastClick.attach(document.body);
+  });
+});
+</script>
+
+</body>
+</html>

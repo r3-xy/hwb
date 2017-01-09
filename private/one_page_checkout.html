@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HuurwoningBemiddeling - Amsterdam</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="icon" href="../im/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/private_all_screens.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../css/private_small_screens.css" media="screen and (max-width: 639px)" />
+<link rel="stylesheet" type="text/css" href="../css/private_large_screens.css" media="screen and (min-width: 640px)" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../css/private_lt_ie9.css" media="screen" />
+<![endif]-->
+</head>
+<body>
+<form>
+  <div id="container">
+    <div id="wrapper" class="twocols">
+      <div id="header" class="large">
+        <div id="logo" onClick="location.href='/huurders_ingelogd/aanbod.aspx'">
+          <div class="logo"></div>
+          <h1>Huurwoningbemiddeling.nl</h1>
+          <h3>snel en betrouwbaar een huurwoning vinden</h3>
+        </div>
+        <div id="images"></div>
+      </div>
+      <div id="content">
+        <div id="nav">
+          <div id="opennav"></div>
+          <div id="openuser"></div>
+          <div class="user"> hwb-test4@jwebbv.nl&nbsp;(<a href="/huurders_ingelogd/uitloggen.aspx">uitloggen</a>) </div>
+          <ul class="nav">
+            <li id="ctl00_MM_liAanbod"><a href="/huurders_ingelogd/aanbod.aspx">Gevonden woningen</a></li>
+            <li id="ctl00_MM_liMijnProfiel"><a href="/huurders_ingelogd/mijnprofiel.aspx">Mijn gegevens</a></li>
+            <li id="ctl00_MM_liMijnVoorkeuren"><a href="/huurders_ingelogd/woningvoorkeuren.aspx">Woning voorkeuren</a></li>
+            <li id="ctl00_MM_liInstellingen"><a href="/huurders_ingelogd/instellingen.aspx">Instellingen</a></li>
+            <li id="ctl00_MM_liContact"><a href="/huurders_ingelogd/contact.aspx">Contact</a></li>
+            <li id="ctl00_MM_liHelp"><a href="/huurders_ingelogd/help.aspx">Help</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="contentBlock notification info">
+            <div class="icon"></div>
+            <h1>Kies abonnement</h1>
+            <p>Om woningdetails te kunnen inzien en om te reageren heeft u een abonnement nodig</p>
+          </div>
+          <div class="contentBlock form subscription">
+            <fieldset>
+              <legend><span>1</span>&nbsp;Maak uw keuze</legend>
+              <div style="display:block; padding-bottom:1em; overflow:hidden;">
+                <div class="choice subscriptionChoice first">
+                  <input type="radio" name="tt" value="18eda49e-925a-4c7c-8369-a7706758c656" id="tt1" />
+                  <label for="tt1">Maandabonnement <s>€ 24,95</s> <span class="discount">€ 19,95</span> <span class="standout">Meest gekozen!</span></label>
+                </div>
+                <div class="choice subscriptionChoice ">
+                  <input type="radio" name="tt" value="d7018aa8-af77-40e8-a38e-d106aea3b9ea" id="tt2"  />
+                  <label for="tt2">Kwartaalabonnement <s>€ 54,95</s> <span class="discount">€ 49,95</span></label>
+                </div>
+              </div>
+              <select name="ctl00$CB$ddlTransacionTypeGUID" id="ddlTransacionTypeGUID" style="display:none">
+                <option value=""></option>
+                <option value="18eda49e-925a-4c7c-8369-a7706758c656">Maandabonnement</option>
+                <option value="d7018aa8-af77-40e8-a38e-d106aea3b9ea">Kwartaalabonnement</option>
+              </select>
+              <span id="ctl00_CB_rfvTransacionTypeGUID" class="error" style="display:none;">• Kies een abonnement</span>
+            </fieldset>
+            <!--
+        <fieldset>
+            <legend><span>2</span>&nbsp;Controleer naam en adres</legend>
+            <p class="payment">
+                K. Nakker<br/>
+                Boven Clarenburg 61<br/>3511CS<br/>Utrecht
+                (<a href="/huurders_ingelogd/mijnprofiel.aspx?NameAddressOnly=1&ReturnUrl=%2fhuurders_ingelogd%2fabonnementnemen-sepa3.aspx%3freden%3ddetails%261234">wijzigen &rsaquo;</a>)
+            </p>
+        </fieldset>
+        -->
+            <fieldset>
+              <legend><span>2</span>&nbsp;Selecteer betaalwijze</legend>
+              <div id="divDirectDebit" class="choice paymentChoice first">
+                <input type="radio" name="b" id="b0" value="DIRECTDEBIT"/>
+                <label for="b0"><span class="paymentLogos directdebit">&nbsp;</span><b>Machtiging</b></label>
+                <div id="ctl00_CB_vsLogin" class="error" style="display:none;"> </div>
+                <div class="details">
+                  <div>
+                    <input name="ctl00$CB$txtIBAN" type="text" maxlength="18" id="txtIBAN" placeholder="Rekeningnummer/IBAN" />
+                  </div>
+                  <span id="ctl00_CB_rfvIBAN" class="error" style="display:none;">• Vul uw IBAN in</span> <span id="ctl00_CB_cvIBAN" class="error" style="display:none;">• Vul een geldig IBAN in (alleen letters en cijfers, geen spaties)</span>
+
+                  <div>
+                    <input name="ctl00$CB$txtAccountHolder" type="text" value="" maxlength="50" id="ctl00_CB_txtAccountHolder" placeholder="Naam" />
+                  </div>
+                  <span id="ctl00_CB_rfvAccountHolder" class="error" style="display:none;">• Vul uw naam in</span> <span id="ctl00_CB_revAccountHolder" class="error" style="display:none;">• Vul een geldige naam in</span> <span id="ctl00_CB_cvAccountHolder" class="error" style="display:none;">• Vul een geldige naam in</span>
+                  
+                  <div>
+                    <input name="ctl00$CB$txtAccountCity" type="text" value="" maxlength="50" id="ctl00_CB_txtAccountCity" placeholder="Woonplaats" />
+                  </div>
+                  <span id="ctl00_CB_rfvCity" class="error" style="display:none;">• Vul uw woonplaats in</span>
+
+                  <div>
+                    <input id="ctl00_CB_chkIAgreeDD" type="checkbox" name="ctl00$CB$chkIAgreeDD" />
+                    <label for="ctl00_CB_chkIAgreeDD">Ik ga akkoord met de machtiging</label>
+                  </div>
+                  <span id="ctl00_CB_rfvIAgreeDD" class="error" style="display:none;">• Ga akkoord met de machtiging</span>
+
+                  <div>
+                    <input type="submit" name="ctl00$CB$btnStartDirectDebit" value="Afronden ›" onClick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$CB$btnStartDirectDebit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnStartDirectDebit" class="green" />
+                  </div>
+                </div>
+              </div>
+              <div id="diviDEAL" class="choice paymentChoice">
+                <input type="radio" name="b" id="b1" value="IDEAL"/>
+                <label for="b1"><span class="paymentLogos ideal">&nbsp;</span><b>iDEAL</b></label>
+                <div id="ctl00_CB_vsIdeal" class="error" style="display:none;"> </div>
+                <div class="details">
+                  <select name="ctl00$CB$ddlIssuer" id="ctl00_CB_ddlIssuer">
+                    <option value="-1">-Kies uw bank-</option>
+                    <option value="INGBNL2A">ING Bank</option>
+                    <option value="ABNANL2A">ABN AMRO Bank</option>
+                    <option value="RABONL2U">Rabobank</option>
+                    <option value="SNSBNL2A">SNS Bank</option>
+                    <option value="RBRBNL21">Regiobank</option>
+                    <option value="ASNBNL21">ASN Bank</option>
+                    <option value="TRIONL2U">Triodos Bank</option>
+                    <option value="KNABNL2H">KNAB</option>
+                    <option value="FVLBNL22">Van Lanschot Bankiers</option>
+                  </select>
+                  <span id="ctl00_CB_rfvIssuer" class="error" style="display:none;">• Kies uw bank</span>
+                  <input type="submit" name="ctl00$CB$btnStartIdeal" value="Betaling starten ›" onClick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$CB$btnStartIdeal&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnStartIdeal" class="green" />
+                </div>
+              </div>
+              <div id="divCreditcard" class="choice paymentChoice">
+                <input type="radio" name="b" id="b3" value="CREDITCARD"/>
+                <label for="b3"><span class="paymentLogos creditcard">&nbsp;</span><b>Creditcard</b></label>
+                <div id="ctl00_CB_vsCreditcard" class="error" style="display:none;"> </div>
+                <div class="details">
+                  <select name="ctl00$CB$ddlCreditcard" id="ctl00_CB_ddlCreditcard">
+                    <option value="-1">-Kies maatschappij-</option>
+                    <option value="CC_MASTERCARD">Mastercard</option>
+                    <option value="CC_VISA">Visa</option>
+                  </select>
+                  <span id="ctl00_CB_rfvCreditcard" class="error" style="display:none;">• Kies uw maatschappij</span>
+                  <input type="submit" name="ctl00$CB$btnStartCreditcard" value="Betaling starten ›" onClick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$CB$btnStartCreditcard&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnStartCreditcard" class="green" />
+                  <br/>
+                </div>
+              </div>
+            </fieldset>
+            <div class="agree">Door verder te gaan accepteert u de <a href="/huurders/algemenevoorwaarden.aspx" target="_blank">Algemene voorwaarden</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="ads"> </div>
+      </div>
+      <div id="pageFooter"> Copyright &copy; 2015 &bull; <a href="/huurders_ingelogd/disclaimer.aspx">disclaimer</a> &bull; <a href="/huurders_ingelogd/privacy.aspx">privacystatement</a> &bull; <a href="/huurders_ingelogd/cookiebeleid.aspx">cookiebeleid</a> &bull; <a href="/huurders_ingelogd/algemenevoorwaarden.aspx">algemene voorwaarden</a> </div>
+    </div>
+  </div>
+
+<!-- Cookie notification -->
+
+</form>
+
+<div id="cookiePolicy">
+  <div class="inner">
+    <span>HuurwoningBemiddeling maakt gebruik van cookies.</span>
+    <span>Zie het <a href="hwb-privacy-statement.html">Privacy-</a> en <a href="hwb-cookiebeleid.html">cookiebeleid</a>.</span>
+    <a class="closeCookie">akkoord en sluiten</a>
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src='../js/fastclick.js'></script>
+<script>
+$(document).ready(function(){
+
+  $("label *").addClass("needsclick");
+
+  $('.closeCookie').click(function() { // Opens verhuren menu
+    $("#cookiePolicy").slideUp('fast');
+  });
+
+
+  $.fn.winSize = function() { // Function to determain if screensize < 640 
+    if ( $(window).width() < 640) { return true };
+  }
+
+  $.fn.cleanUp = function(action) { // Function to close opened menus
+    if ( $().winSize() ) {
+      if (action === "nav" || action === "both") {
+        $("#nav .nav").slideUp('fast');
+      } 
+      if (action === "user" || action === "both") {
+        $("#nav .user").slideUp('fast');
+      }
+    }
+  }
+
+  $('#opennav').click(function() { // Opens huren menu
+    if ( $().winSize() ) {
+      $("#nav .nav").slideToggle('fast');
+      $().cleanUp("user");
+    }
+  });
+  $('#openuser').click(function() { // Opens huren menu
+    if ( $().winSize() ) {
+      $("#nav .user").slideToggle('fast');
+      $().cleanUp("nav");
+    }
+  });
+
+  $('.content').click(function() { // Close both menus
+    $().cleanUp("both");
+  });
+
+  var resizeTimeOut; // Hides opened menus on window resize
+  $(window).resize(function () {
+    if ( $().winSize() ) {
+	} else {
+        $("#nav .nav").hide();
+        $("#nav .user").hide();
+	}
+  });
+
+// Polyfill to remove click delays on browsers with touch UIs
+  $(function() {
+    FastClick.attach(document.body);
+  });
+});
+</script>
+</body>
+</html>
